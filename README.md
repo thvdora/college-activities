@@ -4,16 +4,6 @@ Repository dedicated to activities developed during my Computer Science degree.
 
 Here I organize **checkpoints**, exercises and academic projects throughout each semester.
 
-## 📂 Structure
-
-```text
-college-activities/
-├── semester-01/
-│   ├── checkpoints/
-│   ├── exercises/
-│   └── projects/
-└── README.md
-```
 
 ### 📌 Checkpoints
 
