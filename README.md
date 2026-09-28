@@ -9,16 +9,6 @@ Here I organize **checkpoints**, exercises and academic projects throughout each
 
 Mini assessed activities developed during the semester.
 
-Suggested organization:
-
-```text
-checkpoints/
-├── cp01/
-├── cp02/
-├── cp03/
-└── ...
-```
-
 Each checkpoint folder can contain the source code and, when useful, a small `README.md` explaining the activity.
 
 ---
