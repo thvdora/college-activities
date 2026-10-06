@@ -1,38 +1,48 @@
-# CP02 - Modelagem Matematica Computacional
+# CP02 - Modelagem Matemática Computacional
 
-## Parte A - Descontinuidade removivel
+## Parte A
 
-Funcao: f(x) = (x^2 - 9) / (x - 3)
+```text
+f(x) = (x^2 - 9) / (x - 3)
+```
 
-A fatoracao usada no trabalho e x^2 - 9 = (x - 3)(x + 3). Assim, o limite em x -> 3 e igual a 6.
+```text
+x^2 - 9 = (x - 3)(x + 3)
+lim x->3 (x + 3) = 6
+```
 
-Em x = 3, a funcao original nao esta definida, pois ocorre 0/0. Portanto, ha uma descontinuidade removivel (buraco) em x = 3, embora o limite exista e seja igual a 6.
+A função apresenta uma descontinuidade removível (buraco) em `x = 3`, pois não está definida nesse ponto, embora o limite exista e seja igual a 6.
 
-## Parte B - Descontinuidade infinita
+## Parte B
 
-Funcao: g(x) = 1 / (50 - x)
+```text
+g(x) = 1 / (50 - x)
+```
 
-O trabalho testa valores de x cada vez mais proximos de 50 pelo lado esquerdo e conclui que o limite tende a +infinito.
+```text
+lim x->50- g(x) = +∞
+```
 
-Interpretacao registrada no PDF: no modelo, o custo cresce sem limites conforme o numero de usuarios se aproxima de 50. Na pratica, o servidor possui limitacoes fisicas e financeiras e pode apresentar lentidao, recusar conexoes ou parar de funcionar antes de um custo real se tornar infinito.
+Na prática, o servidor possui limitações físicas e financeiras. Antes que o custo se torne infinito, ele pode ficar sobrecarregado, apresentar lentidão, recusar novas conexões ou até parar de funcionar.
 
-## Parte C - Descontinuidade por salto
+Portanto, o resultado `+∞` indica que o custo aumenta sem limites no modelo à medida que o número de usuários se aproxima de 50, mas não significa que o custo real chegará ao infinito.
 
-Funcao por partes:
+## Parte C
 
-h(x) = 100, para x < 10
-h(x) = 150, para x >= 10
+```text
+h(x) = 100, x < 10
+h(x) = 150, x >= 10
+```
 
-Limites laterais:
-- lim x->10- h(x) = 100
-- lim x->10+ h(x) = 150
+```text
+lim x->10- h(x) = 100
+lim x->10+ h(x) = 150
+```
 
-Como os limites laterais sao diferentes, o limite em x = 10 nao existe. Portanto, a funcao e descontinua por salto nesse ponto.
+O limite em `x = 10` não existe pois os limites laterais não são os mesmos. Portanto, a função é descontínua por salto nesse ponto.
 
-### Tres condicoes de continuidade analisadas
+### Três condições de continuidade
 
-1. A funcao esta definida no ponto: h(10) = 150.
-2. O limite no ponto deveria existir, mas os limites laterais sao diferentes.
-3. O limite deveria ser igual ao valor da funcao, porem o limite nao existe.
-
-A estrutura deste README segue a ordem Parte A, Parte B e Parte C do documento original.
+1. A função deve estar definida no ponto: `h(10) = 150`.
+2. O limite no ponto deve existir: `lim x->10- h(x) = 100` e `lim x->10+ h(x) = 150`.
+3. O limite deve ser igual ao valor da função, porém o limite não existe.
